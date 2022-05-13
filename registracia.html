@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/mystil.css">
+    <title>Document</title>
+</head>
+<body>
+  <header id="header">
+    <nav id="regnav"></nav>
+  </header>
+  <main>
+    <div class="registracia">
+      <div class="regblok">
+        <div class="">
+          <div class="regimg">
+            <img src="img/BMW/BMW116.png" alt="BMW"  style="width:100%;">
+          </div>
+          <div class="regimg regimgg">
+            <img src="img/BMW/BMW116.png" alt="BMW"  style="width:100%;">
+          </div>
+        </div>
+      </div>
+      <div class="regmtavari">
+        <form action="dasruldareg.html" method="post" class="regform">
+          <p class="regtxt">რეგისტრაციის შესავსები ფორმა</p>
+          <input type="text" name="title" id="title" placeholder=" ფსევდონიმი">
+          <input type="text" name="saxeli" id="saxeli" placeholder=" სახელი">
+          <input type="text" name="saxeli" id="gvari" placeholder=" გვარი">
+          <input type="email" name="email" id="email" placeholder=" ელ. ფოსტა">
+          <input type="tel" name="phone" id="phone" placeholder=" ტელეფონის ნომერი (ფორმატი XXX-XX-XX-XX)" pattern="[0-9]{3}-[0-9]{2}-[0-9]{2}-[0-9]{2}]">
+          <input list="ganatleba" placeholder="განათლება">
+          <datalist id="ganatleba">
+            <option value="უმაღლესი">
+            <option value="ტექნიკური">
+            <option value="საშუალო">
+            <option value="სხვა">
+          </datalist>
+          <input type="password" name="pass" id="pass" placeholder=" პაროლი">
+          <input type="password" name="gapass" id="gapass" placeholder=" გაიმეორეთ პაროლი ">
+          <input type="checkbox" name="chek" id="chek" >
+          <label for="chek">ეთანხმებით <a href="wesebi.html">წესებსა და პირობებს</a> </label><br>
+          <input type="submit" id="sabmit" name="sabmit" value="submit" onclick="regsubmit(this);">
+        </form>
+        <form action="index.html" class="regform">
+          <input type="submit" id="sabmit1" name="sabmit" value="დაბრუნება" > 
+        </form>
+      </div> 
+      <div class="regblok"> 
+        <div class="regimg">
+          <img src="img/BMW/BMW116i.png" alt="BMW"  style="width:100%;">
+        </div>
+        <div class="regimg regimgg">
+          <img src="img/BMW/BMW116i.png" alt="BMW"  style="width:100%;">
+        </div>
+      </div>
+    </div>
+    <div class="passdiv"></div>
+  </main>
+  <footer></footer>
+  <script src="js/myjs.js"></script>
+</body>
+</html>
